@@ -6,9 +6,10 @@ php:
   - 5.4
 #  - 5.5
   #- 5.6
+  
 env:
-global:
-  - APP_NAME=php-mongo-beta
+  global:
+    - APP_NAME=php-mongo-beta
 
 
 services:
