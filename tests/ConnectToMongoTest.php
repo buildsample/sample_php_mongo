@@ -5,7 +5,7 @@ class ConnectToMongoTest extends PHPUnit_Framework_TestCase{
   public function testDatabase(){
       $connection = new ConnectToMongo();
       $collection = $connection->connect();
-      $connection->insertDocument($collection, 'Seattle', 'WA');
+      $connection->insertDocument($collection, 'Seatatle', 'WA');
       $result = $connection->findADocument($collection, 'Seattle');
       $this->assertEquals('Seattle, WA', $result); //check if MongoDB returned 'Seattle, WA' 
   }
